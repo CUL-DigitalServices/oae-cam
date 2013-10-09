@@ -1,0 +1,23 @@
+{
+  "name": "oae-cam",
+  "version": "0.0.1",
+  "description": "A set of OAE UI widgets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CUL-DigitalServices/oae-cam.git"
+  },
+  "keywords": [
+    "OAE",
+    "widgets",
+    "UI"
+  ],
+  "author": "Cambridge University Library",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/CUL-DigitalServices/oae-cam/issues"
+  }
+}

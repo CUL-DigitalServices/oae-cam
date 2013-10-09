@@ -1,0 +1,22 @@
+.node {
+    cursor: pointer;
+}
+
+.node > circle.bg {
+    stroke: #EEE;
+    stroke-width: 1px;    
+}
+
+.node > text {
+    font-size: .75em;
+}
+
+.link {
+    stroke: #999;
+    stroke-opacity: .5;
+}
+
+text {
+    color: #000;
+    pointer-events: none;
+}

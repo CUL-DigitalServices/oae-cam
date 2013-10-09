@@ -1,0 +1,41 @@
+diff --git a/ui/bundles/default.properties b/ui/bundles/default.properties
+index 675f861..847cca9 100644
+--- a/ui/bundles/default.properties
++++ b/ui/bundles/default.properties
+@@ -329,6 +329,7 @@ SIGN_OUT = Sign out
+ SIGN_UP = Sign up
+ SPREADSHEET = Spreadsheet
+ START_DISCUSSION = Start discussion
++STATS = Stats
+ SUPPORTING_ACADEMIC_COLLABORATION = Supporting academic collaboration
+ TEXT_DOCUMENT = Text document
+ THIS_FIELD_IS_REQUIRED = This field is required
+diff --git a/ui/js/user.js b/ui/js/user.js
+index db7ee74..ad88bd5 100644
+--- a/ui/js/user.js
++++ b/ui/js/user.js
+@@ -140,6 +140,24 @@ require(['jquery', 'oae.core'], function($, oae) {
+                         ]
+                     }
+                 ]
++            },
++            {
++                'id': 'stats',
++                'title': oae.api.i18n.translate('__MSG__STATS__'),
++                'icon': 'icon-html5',
++                'layout': [
++                    {
++                        'width': 'span12',
++                        'widgets': [
++                            {
++                                'id': 'visualisation',
++                                'settings': {
++                                    'principalId': userProfile.id
++                                }
++                            }
++                        ]
++                    }
++                ]
+             }
+         ];
+         $(window).trigger('oae.trigger.lhnavigation', [lhNavigation, baseUrl]);

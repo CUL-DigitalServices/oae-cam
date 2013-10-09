@@ -1,0 +1,10 @@
+{
+    "i18n": {
+        "default": {
+            "bundle": "bundles/default.properties",
+            "description": "Profile visualisation",
+            "name": "Visualize profile"
+        }
+    },
+    "src": "visualisation.html"
+}
